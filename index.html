@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+
+    <title>Assignment Peerawas Likitkiatikul</title>
+  </head>
+
+  <body>
+    <header class="Header" id="header">
+      <nav class="Nav">
+        <p>&lt;/&gt; Developer</p>
+
+        <ul class="Nav__Menu">
+          <li>
+            <a href="#Home">Home</a>
+          </li>
+          <li>
+            <a href="#Services">Services</a>
+          </li>
+          <li>
+            <a href="#Stats">Stats</a>
+          </li>
+          <li>
+            <a href="#GreatWork">Great Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="position-relative Hero" id="Hero">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/header-1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/header-2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/header-3.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="Heading">
+        <h1>Development</h1>
+        <p className="mb-4">We are web developer</p>
+
+        <div role="group" class="ButtonGroup">
+          <button class="Button Button--black">Read More</button>
+          <button class="Button">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="Container" id="Services">
+      <div class="Wrapper">
+        <h2 class="H2">Services<span>.</span></h2>
+
+        <div class="Grid">
+          <div class="d-flex flex-column text-center align-items-center">
+            <div class="ImageContainer">
+              <img src="assets/editing.png" class="img-fluid" />
+            </div>
+            <p class="text-uppercase fs-5">Web Design</p>
+            <p class="text-black-50">
+              blanditiis quia. Deleniti, eum quisquam! Reiciendis voluptatibus,
+              illum libero nisi sint nihil iure cumque.
+            </p>
+          </div>
+          <div class="d-flex flex-column text-center align-items-center">
+            <div class="ImageContainer">
+              <img src="assets/settings.png" class="img-fluid" />
+            </div>
+            <p class="text-uppercase fs-5">Development</p>
+            <p class="text-black-50">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+              libero nisi sint nihil iure cumque.
+            </p>
+          </div>
+          <div class="d-flex flex-column text-center align-items-center">
+            <div class="ImageContainer">
+              <img src="assets/apple.png" class="img-fluid" />
+            </div>
+            <p class="text-uppercase fs-5">Branding</p>
+            <p class="text-black-50">
+              blanditiis quia. Deleniti, eum quisquam! Reiciendis voluptatibus,
+              illum libero nisi sint nihil iure cumque.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column text-center align-items-center">
+            <div class="ImageContainer">
+              <img src="assets/editing.png" class="img-fluid" />
+            </div>
+            <p class="text-uppercase fs-5">Photography</p>
+            <p class="text-black-50">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+              illum libero nisi sint nihil iure cumque.
+            </p>
+          </div>
+          <div class="d-flex flex-column text-center align-items-center">
+            <div class="ImageContainer">
+              <img src="assets/settings.png" class="img-fluid" />
+            </div>
+            <p class="text-uppercase fs-5">Typography</p>
+            <p class="text-black-50">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+              blanditiis quia. Deleniti, eum quisquam! Reiciendis voluptatibus,
+            </p>
+          </div>
+          <div class="d-flex flex-column text-center align-items-center">
+            <div class="ImageContainer">
+              <img src="assets/apple.png" class="img-fluid" />
+            </div>
+            <p class="text-uppercase fs-5">UI Design</p>
+            <p class="text-black-50">
+              blanditiis quia. Deleniti, eum quisquam! Reiciendis voluptatibus,
+              illum libero nisi sint nihil iure cumque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Container" id="Stats">
+      <div class="Wrapper">
+        <div class="StatCardContainer">
+          <div class="StatCard">
+            <p class="StatCard__Number StatCard__Number--clients">0</p>
+            <p>Clients</p>
+          </div>
+          <div class="StatCard">
+            <p class="StatCard__Number StatCard__Number--projects">0</p>
+            <p>Projects</p>
+          </div>
+          <div class="StatCard">
+            <p class="StatCard__Number StatCard__Number--awards">0</p>
+            <p>Awards</p>
+          </div>
+          <div class="StatCard">
+            <p class="StatCard__Number StatCard__Number--teams">0</p>
+            <p>Teams</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Container" id="GreatWork">
+      <div class="Wrapper">
+        <h2 class="H2">Great Work<span>.</span></h2>
+        <ul class="MenuList">
+          <li class="MenuListItem MenuListItem--active">
+            <a href="#">All</a>
+          </li>
+          <li class="MenuListItem">
+            <a href="#">Branding</a>
+          </li>
+          <li class="MenuListItem">
+            <a href="#">Design</a>
+          </li>
+          <li class="MenuListItem">
+            <a href="#">Photo</a>
+          </li>
+          <li class="MenuListItem">
+            <a href="#">Coffee</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ImageGallery">
+      <div
+        class="GalleryItem"
+        style="background-image: url(/assets/gal-1.jpg)"
+      ></div>
+      <div
+        class="GalleryItem"
+        style="background-image: url(/assets/gal-2.jpg)"
+      ></div>
+      <div
+        class="GalleryItem"
+        style="background-image: url(/assets/gal-3.jpg)"
+      ></div>
+      <div
+        class="GalleryItem"
+        style="background-image: url(/assets/gal-4.jpg)"
+      ></div>
+      <div
+        class="GalleryItem"
+        style="background-image: url(/assets/gal-5.jpg)"
+      ></div>
+      <div
+        class="GalleryItem"
+        style="background-image: url(/assets/gal-6.jpg)"
+      ></div>
+      <div
+        class="GalleryItem"
+        style="background-image: url(/assets/gal-7.jpg)"
+      ></div>
+      <div
+        class="GalleryItem"
+        style="background-image: url(/assets/gal-8.jpg)"
+      ></div>
+    </section>
+
+    <footer class="Footer">
+      &copy; 2021 &lt;/&gt; <strong>Developer</strong> All Rights Reserved
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+body {
+  position: relative;
+  letter-spacing: 1px;
+  width: 100%;
+  --c-yellow: #ebbe6f;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.Container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.Wrapper {
+  padding: 84px 0;
+}
+
+.Button {
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  border: 3px solid white;
+  text-align: center;
+  font-size: 10px;
+  padding: 4px 12px;
+}
+
+.Button--black {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.Header {
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  height: 48px;
+}
+
+.Nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-transform: uppercase;
+}
+
+.Nav * {
+  margin-bottom: 0;
+}
+
+.Nav p {
+  font-size: 20px;
+}
+
+.Nav__Menu {
+  display: none;
+}
+
+.Nav .Nav__Menu li a {
+  font-size: 12px;
+}
+
+.Hero .Heading {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: grid;
+  row-gap: 8px;
+}
+
+.Hero .Heading h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.Hero .Heading .ButtonGroup {
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.Hero .Heading .Button--black {
+  display: none;
+}
+
+.H2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 64px;
+  letter-spacing: 8px;
+}
+
+.H2 span {
+  font-size: 32px;
+  color: var(--c-yellow);
+}
+
+#Services .Grid {
+  display: grid;
+  grid-template-columns: 300px;
+  gap: 16px;
+  justify-content: center;
+}
+
+#Services .ImageContainer {
+  width: 48px;
+  margin-bottom: 24px;
+}
+
+#Stats {
+  max-width: 100vw;
+  min-height: 320px;
+  background-image: url(/assets/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Stats .Wrapper {
+  padding: 64px 0;
+}
+
+#Stats .StatCardContainer {
+  display: grid;
+  grid-template-columns: 300px;
+  justify-content: center;
+  gap: 8px;
+}
+
+#Stats .StatCard {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#Stats .StatCard__Number {
+  font-size: 48px;
+  margin: 0;
+}
+
+#GreatWork .Wrapper {
+  padding-bottom: 0;
+}
+
+#GreatWork .H2 {
+  margin-bottom: 32px;
+}
+
+#GreatWork .MenuList {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(5, max-content);
+  list-style: none;
+  margin-bottom: 48px;
+  margin: 0 auto 36px;
+  padding: 4px 8px;
+  width: max-content;
+}
+
+#GreatWork .MenuList .MenuListItem {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#GreatWork .MenuList .MenuListItem a {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+#GreatWork .MenuList .MenuListItem--active {
+  color: var(--c-yellow);
+}
+
+.ImageGallery {
+  display: grid;
+  grid-auto-rows: 284px;
+}
+
+.ImageGallery .GalleryItem {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 12px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .Wrapper {
+    padding: 120px 0;
+  }
+
+  .Header {
+    height: 64px;
+  }
+
+  .Nav p {
+    font-size: 20px;
+  }
+
+  .Nav__Menu {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 24px;
+    list-style-type: none;
+    padding-right: 8px;
+  }
+
+  .Hero .Heading {
+    row-gap: 24px;
+  }
+
+  .Hero .Heading h1 {
+    font-size: 32px;
+    letter-spacing: 12px;
+  }
+
+  .Hero .Heading .ButtonGroup {
+    grid-template-columns: repeat(2, 120px);
+  }
+
+  .Hero .Heading .Button--black {
+    display: block;
+  }
+
+  #Services .Grid {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  #Stats .Wrapper {
+    padding: 84px 0;
+  }
+
+  #Stats .StatCardContainer {
+    grid-template-columns: repeat(4, 175px);
+    justify-content: space-evenly;
+  }
+
+  #Stats .StatCard__Number {
+    font-size: 64px;
+  }
+
+  #GreatWork .MenuList {
+    margin-bottom: 64px;
+    gap: 24px;
+  }
+
+  .ImageGallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Footer {
+    padding: 64px 0;
+    font-size: 14px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .Nav__Menu {
+    padding-right: 0;
+    gap: 32px;
+  }
+
+  #Services .Grid {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  #Stats .StatCardContainer {
+    grid-template-columns: repeat(4, 250px);
+  }
+
+  #GreatWork .MenuList .MenuListItem a {
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+
+  .ImageGallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
